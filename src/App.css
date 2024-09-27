@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body{
+  background-color: black;
+  font-family: 'Share Tech';
+}
+
+#navbar{
+  position: sticky;
+  z-index: 999999;
+}
+
+#Hero{
+  height: 100vh;
+}
+
+#heading{
+  font-size: 10vh;
+  color: white;
+  font-family: 'Share Tech';
+  margin: 0%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#heading:hover{
+  scale: 0.9;
+  text-decoration: underline;
+}
+
+#Trendingblogs{
+  background-image: url('D:\React\blogwebsite\src\assets\bground3.png');
+}
+
+#trending_table{
+  align-self: center;
+  margin-bottom: 15vhpx;
+}
+
+tr{
+  margin-bottom: 15vh;
+}
+
+#trending_card{
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 5vw;
+  color: white;
+  background-color: black;
+  border: 3px solid purple;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+#trending_card:hover{
+  scale: 1.1;
+  box-shadow: 15px 10px rgb(48, 28, 64);
+  border: 3px solid grey;
+  
+}
+
+li{
+  margin-left: 20vw;
+  color: white;
+  text-decoration: antiquewhite !important;
+}
+
+li:hover{
+  color: green;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Slideshow*/
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-image {
+  min-width: 100%;
+  height: auto;
+}
